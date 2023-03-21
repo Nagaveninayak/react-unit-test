@@ -11,7 +11,15 @@ test('greet component renders with the text', () => {
     expect(textElement).toBeInTheDocument();
 })
 
-test('greet component renders correctly', () => {
+/**only */
+// test.only('greet component renders correctly only', () => {
+//     render(<Greet />);
+//     const testElement = screen.getByText(/hello/i);
+//     expect(testElement).toBeInTheDocument();
+// })
+
+/**skip */
+test.skip('greet component renders correctly skip', () => {
     render(<Greet />);
     const testElement = screen.getByText(/hello/i);
     expect(testElement).toBeInTheDocument();
